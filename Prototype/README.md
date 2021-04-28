@@ -4,9 +4,9 @@
 
 This project is based on the following repositories: 
 
-[Demo Wallet](https://github.com/digitalbazaar/chapi-demo-wallet)
-[Demo Issuer](https://github.com/digitalbazaar/chapi-demo-issuer)
-[Demo Verifier](https://github.com/digitalbazaar/chapi-demo-verifier)
+- [Demo Wallet](https://github.com/digitalbazaar/chapi-demo-wallet)
+- [Demo Issuer](https://github.com/digitalbazaar/chapi-demo-issuer)
+- [Demo Verifier](https://github.com/digitalbazaar/chapi-demo-verifier)
 
 ## Background
 
@@ -27,10 +27,10 @@ The following commands must be executed for each project in succession:
 
 1. `npm install` 
 2. `npm start`
-3. Visit `localhost:<port>` or:
-	Wallet: `https://127.0.0.1:8081`
-	Issuer: `https://127.0.0.1:8082`
-	Verifier: `https://127.0.0.1:8083`
+3. Visit `localhost:<port>` or
+	- Wallet: `https://127.0.0.1:8081`
+	- Issuer: `https://127.0.0.1:8082`
+	- Verifier: `https://127.0.0.1:8083`
 
 
 ## Testen
