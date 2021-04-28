@@ -33,7 +33,7 @@ The following commands must be executed for each project in succession:
 	- Verifier: `https://127.0.0.1:8083`
 
 
-## Testen
+## Testing
 
 ### Use case
 Alice Doe would like to receive a 30% discount at a bookstore. However, this discount is only for students. In order to get it, she gets a VC from her university, claiming to be a student there.
