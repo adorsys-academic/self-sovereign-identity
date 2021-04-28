@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Das Leseratten-Paradies | Online Shop</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="width-1200">
+            <section class="text-right text-dark-blue text-small-80">
+                <a href="konto.html">Mein Konto</a> | <a href="merkzettel.html">Merkzettel</a> | <a href="warenkorb.html">Warenkorb</a>
+            </section>
+            <section class="title text-center text-bold">
+                Das
+                <br/>
+                Leseratten-Paradies
+            </section>
+            <nav class="menu">
+                <ul class="flex flex-space-between text-bold">
+                    <li>Bücher</li>
+                    <li>eBooks</li>
+                    <li>Kalender</li>
+                    <li>Spielwaren</li>
+                    <li>Filme</li>
+                    <li>Musik</li>
+                    <li>Wohnen</li>
+                    <li>Technik</li>
+                    <li>Schreibwaren</li>
+                    <li>Geschenkkarte</li>
+                    <li>SALE</li>
+                    <li>Aktuelles</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="banner text-center">
+            <p class="text-bold">Jetzt neu: 30% Rabatt für Studenten</p>
+            <p class="text-small-80"><a id="requestButton" class="no-decoration arrow-before clickable">Bestätige mit einem Verifiable Credential</a></p>
+        </section>
+        <main>            
+            <section class="artikel">
+                <ul class="artikel-liste flex flex-center">
+                    <li class="buch">
+                        <a>VANITAS - Rot wie Feuer</a>
+                        <img src="images/vanitas.jpeg" />
+                        <ul class="artikel-details">
+                            <li class="autor">Ursula Poznanski</li>
+                            <li class="typ">Buch<br />(Taschenbuch)</li>
+                            <li class="preis">16,99&euro;</li>
+                        </ul>
+                    </li>
+                    <li class="buch">
+                        <a>Dunkelkammer</a>
+                        <img src="images/dunkelkammer.jpeg" />
+                        <ul class="artikel-details">
+                            <li class="autor">Bernhard Aichner</li>
+                            <li class="typ">Buch<br />(Taschenbuch)</li>
+                            <li class="preis">17,00&euro;</li>
+                        </ul>
+                    </li>
+                    <li class="buch">
+                        <a>Der große Sommer</a>
+                        <img src="images/sommer.jpeg" />
+                        <ul class="artikel-details">
+                            <li class="autor">Ewald Arenz</li>
+                            <li class="typ">Buch<br />(gebundene Ausgabe)</li>
+                            <li class="preis">20,00&euro;</li>
+                        </ul>
+                    </li>
+                    <li class="buch">
+                        <a>Du kannst kein Zufall sein</a>
+                        <img src="images/zufall.jpeg" />
+                        <ul class="artikel-details">
+                            <li class="autor">James Bailey</li>
+                            <li class="typ">Buch<br />(Taschenbuch)</li>
+                            <li class="preis">10,99&euro;</li>
+                        </ul>
+                    </li>
+                    <li class="buch">
+                        <a>Playlist</a>
+                        <img src="images/playlist.jpeg" />
+                        <ul class="artikel-details">
+                            <li class="autor">Sebastian Fitzek</li>
+                            <li class="typ">Buch<br />(gebundene Ausgabe)</li>
+                            <li class="preis">22,99&euro;</li>
+                        </ul>
+                    </li>
+                    <li class="buch">
+                        <a>Was, wenn wir einfach die Welt retten?</a>
+                        <img src="images/welt.jpeg" />
+                        <ul class="artikel-details">
+                            <li class="autor">Frank Schätzing</li>
+                            <li class="typ">Buch<br />(gebundene Ausgabe)</li>
+                            <li class="preis">20,00&euro;</li>
+                        </ul>
+                    </li>
+                    <li class="buch">
+                        <a>Deeply</a>
+                        <img src="images/deeply.jpeg" />
+                        <ul class="artikel-details">
+                            <li class="autor">Ava Reed</li>
+                            <li class="typ">Buch<br />(Taschenbuch)</li>
+                            <li class="preis">12,90&euro;</li>
+                        </ul>
+                    </li>
+                    <li class="buch">
+                        <a>Über Menschen</a>
+                        <img src="images/menschen.jpeg" />
+                        <ul class="artikel-details">
+                            <li class="autor">Juli Zeh</li>
+                            <li class="typ">Buch<br />(gebundene Ausgabe)</li>
+                            <li class="preis">22,00&euro;</li>
+                        </ul>
+                    </li>
+                    <li class="buch">
+                        <a>Miss Merkel</a>
+                        <img src="images/merkel.jpeg" />
+                        <ul class="artikel-details">
+                            <li class="autor">David Safier</li>
+                            <li class="typ">Buch<br />(Taschenbuch)</li>
+                            <li class="preis">16,00&euro;</li>
+                        </ul>
+                    </li>
+                  </ul>
+            </section>
+        </main>
+        <section class="spacer">&nbsp;</section>
+        <footer class="legal">
+            <ul class="flex flex-center text-small-90">
+                <li><a href="agb.html">AGB</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </footer>
+        <footer class="benefits-list">
+            <ul class="flex flex-center text-small-90">
+                <li>kostenlose Filialabholung</li>
+                <li>Gratis-Buchversand innerhalb Deutschlands</li>
+                <li>Scan & Go</li>
+            </ul>
+        </footer>
+        <script src="https://unpkg.com/credential-handler-polyfill@2.1.3/dist/credential-handler-polyfill.min.js"></script>
+        <script src="js/script.js"></script>
+
+        <div class="container width-1200">
+          <div class="card-panel hide" id="resultsPanel">
+            <h4><u>Verwendeter Verifiable Credential:</u></h4>
+            <br>
+            <pre><code id="getResults"></code></pre>
+          </div>
+</div>
+</body>
+</html>

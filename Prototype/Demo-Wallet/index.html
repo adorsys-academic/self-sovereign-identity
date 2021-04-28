@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Minimal Demo Wallet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified Materialize JS/CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!--Credential Handler API Polyfill-->
+  <script src="https://unpkg.com/credential-handler-polyfill@2.1.3/dist/credential-handler-polyfill.min.js"></script>
+  <script src="https://unpkg.com/web-credential-handler@1.0.1/dist/web-credential-handler.min.js"></script>
+
+  <script src="config.js"></script>
+  <script src="js-helpers.js"></script>
+  <script src="install-wallet.js"></script>
+  <script src="mock-user-management.js"></script>
+
+  <!--Simple cookie lib-->
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="card-panel">
+    <h5>Demo Wallet</h5>
+
+    <div class="card-panel hide" id="logged-in">
+     
+       <h6><b>Logged in: </b><span id="username"></span></h6>
+        <br>
+        <h6><u>Wallet Content:</u></h6>
+        <ol id="walletContents" class="showDataDidDoc"></ol>
+ 
+      <a class="waves-effect waves-light btn" id="logoutButton">Reset and Logout</a>
+    </div>
+
+    <div class="card-panel hide" id="logged-out">
+      <p>
+        To start using the wallet, click the <b>Login</b> button.
+      </p>
+      <p>
+        For purposes of this demo, we will skip Registration and just use a
+        test account.
+      </p>
+      <a class="waves-effect waves-light btn" id="loginButton">Login</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  console.log('Registering wallet...');
+
+  // Registers this demo wallet with the current user's browser,
+  // from install-wallet.js
+  registerWalletWithBrowser()
+    .catch(e => console.error('Error in registerWalletWithBrowser:', e));
+
+  // Set up the UI / button events.
+  // `onDocumentReady` helper function is defined in ./js-helpers.js
+  onDocumentReady(() => {
+    document.getElementById('loginButton').addEventListener('click', login);
+    document.getElementById('logoutButton').addEventListener('click', logout);
+    document.getElementById('walletContents').addEventListener('click', showDidDoc);
+
+    refreshUserArea();
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
